@@ -24,13 +24,15 @@
 
 ## About The Project
 
+![Screenshot](images/screenshot.png)
+
 This is a command line utility to fetch weather forecast from weather.com and other sources
 
 ### Built With
 
 * [Python](https://www.python.org)
 * [Requests](https://pypi.org/project/requests/)
-* [BeautifuklSoup](https://pypi.org/project/beautifulsoup4)
+* [BeautifulSoup](https://pypi.org/project/beautifulsoup4)
 
 <!-- GETTING STARTED -->
 
