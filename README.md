@@ -24,8 +24,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/screenshot.png)
-
 This is a command line utility to fetch weather forecast from weather.com and other sources
 
 ### Built With
@@ -117,3 +115,4 @@ Project Link: [https://github.com/austinewuncler/cliweather](https://github.com/
 ## Acknowledgements
 
 * [Python Programming Blueprints](https://www.packtpub.com/application-development/python-programming-blueprints)
+
