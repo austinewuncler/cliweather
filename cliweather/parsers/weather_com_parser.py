@@ -63,7 +63,10 @@ class WeatherComParser:
 
             try:
                 date_info = item['weather-cell']
-                date_time, day_detail = date_info[:3], date_info[3:]
+                if date_info.startswith('Today'):
+                    date_time, day_detail = date_info[:5], date_info[5:]
+                else:
+                    date_time, day_detail = date_info[:3], date_info[3:]
                 item['date-time'] = date_time
                 item['day-detail'] = day_detail
             except KeyError:
