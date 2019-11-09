@@ -13,8 +13,8 @@ required.add_argument('-p', '--parser',
                       choices=parsers.keys(),
                       required=True,
                       dest='parser',
-                      help=('Specify which parser will be used to scrape '
-                            'weather information.'))
+                      help=('specify which parser will be used to scrape '
+                            'weather information'))
 
 unit_values = [name.title() for name, value in Unit.__members__.items()]
 
@@ -23,13 +23,13 @@ argparser.add_argument('-u', '--unit',
                        required=False,
                        action=SetUnitAction,
                        dest='unit',
-                       help=('Specify the unit that will be used to display '
+                       help=('specify the unit that will be used to display '
                              'the temperature'))
 
 argparser.add_argument('-a', '--areacode',
                        required=True,
                        dest='area_code',
-                       help=('The code area to get the weather broadcast '
+                       help=('the code area to get the weather broadcast '
                              'from'))
 
 argparser.add_argument('-v', '--version',
@@ -40,7 +40,25 @@ argparser.add_argument('-td', '--today',
                        dest='forecast_option',
                        action='store_const',
                        const=ForecastType.TODAY,
-                       help='Show the weather forecast for the current day')
+                       help='show the weather forecast for the current day')
+
+argparser.add_argument('-5d', '--fivedays',
+                       dest='forecast_option',
+                       action='store_const',
+                       const=ForecastType.FIVEDAYS,
+                       help='Shows the weather forecast for the next five days')
+
+argparser.add_argument('-10d', '--tendays',
+                       dest='forecast_option',
+                       action='store_const',
+                       const=ForecastType.TENDAYS,
+                       help='Shows the weather forecast for the next 10 days')
+
+argparser.add_argument('-w', '--weekend',
+                       dest='forecast_option',
+                       action='store_const',
+                       const=ForecastType.WEEKEND,
+                       help='Shows the weather forecast for the next or current weekend')
 
 args = argparser.parse_args()
 
@@ -55,4 +73,4 @@ parser = parsers[args.parser]()
 results = parser.run(args)
 
 for result in results:
-    print(results)
+    print(result)
