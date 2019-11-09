@@ -24,7 +24,9 @@
 
 ## About The Project
 
-![Screenshot](images/screenshot_today.png)
+![Screenshot](images/screenshot_today.PNG)
+![Screenshot](images/screenshot_fivedays.PNG)
+![Screenshot](images/screenshot_weekend.PNG)
 
 This is a command line utility to fetch weather forecast from weather.com and other sources
 
