@@ -17,7 +17,7 @@ class Forecast:
         self.high_temp = high_temp
         self.low_temp = low_temp
         self.humidity = humidity
-        self.wind = wind
+        self.wind = wind.strip()
         self.description = description
         self.forecast_type = forecast_type
         if forecast_date:
@@ -31,7 +31,7 @@ class Forecast:
 
         if self.forecast_type == ForecastType.TODAY:
             temperature = (f'{offset}{self.current_temp}\xb0\n'
-                           f'{offset}High {self.high_temp}\xb0 / Low  {self.low_temp}\xb0 ')
+                           f'{offset}High {self.high_temp}\xb0 / Low {self.low_temp}\xb0 ')
         else:
             temperature = (
                 f'{offset}High {self.high_temp}\xb0 / Low {self.low_temp}\xb0 ')

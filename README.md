@@ -26,11 +26,11 @@
 
 ## About The Project
 
-![Screenshot](images/screenshot_today.PNG)
+![Screenshot](images/screenshot_today.png)
 
-![Screenshot](images/screenshot_fivedays.PNG)
+![Screenshot](images/screenshot_fivedays.png)
 
-![Screenshot](images/screenshot_weekend.PNG)
+![Screenshot](images/screenshot_weekend.png)
 
 This is a command line utility to fetch weather forecast from weather.com and potentially other sources
 
@@ -80,7 +80,7 @@ To view the help:
 python -m cliweather -h
 ```
 
-For example, to get today's weather forecast for Nairobi, Kenya (KEXX0009:1:KE):
+For example, to get today's weather forecast for Nairobi, Kenya (KEXX0009:1: KE):
 
 ``` sh
 python -m cliweather -u Celsius -a KEXX0009:1:KE -p WeatherComParser -td
