@@ -8,11 +8,13 @@
 
 ## Table of Contents
 
+<!-- markdownlint-disable MD004 -->
+
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+  + [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
+  + [Prerequisites](#prerequisites)
+  + [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -24,16 +26,18 @@
 
 ## About The Project
 
-![Screenshot](images/screenshot_today.PNG)
-![Screenshot](images/screenshot_fivedays.PNG)
-![Screenshot](images/screenshot_weekend.PNG)
+![Screenshot](images/screenshot_today. PNG)
 
-This is a command line utility to fetch weather forecast from weather.com and other sources
+![Screenshot](images/screenshot_fivedays. PNG)
+
+![Screenshot](images/screenshot_weekend. PNG)
+
+This is a command line utility to fetch weather forecast from weather.com and potentially other sources
 
 ### Built With
 
 * [Python](https://www.python.org)
-* [Requests](https://pypi.org/project/requests/)
+* [Requests](https://pypi.org/project/requests)
 * [BeautifulSoup](https://pypi.org/project/beautifulsoup4)
 
 <!-- GETTING STARTED -->
@@ -119,4 +123,6 @@ Project Link: [https://github.com/austinewuncler/cliweather](https://github.com/
 ## Acknowledgements
 
 * [Python Programming Blueprints](https://www.packtpub.com/application-development/python-programming-blueprints)
+
+<!-- markdownlint-disable MD012 -->
 
