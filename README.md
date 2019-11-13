@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Before starting, please ensure you have:
 
 * pipenv
 
@@ -80,7 +80,7 @@ To view the help:
 python -m cliweather -h
 ```
 
-For example, to get today's weather forecast:
+For example, to get today's weather forecast for Nairobi, Kenya (KEXX0009:1:KE):
 
 ``` sh
 python -m cliweather -u Celsius -a KEXX0009:1:KE -p WeatherComParser -td
